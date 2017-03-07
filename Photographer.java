@@ -1,7 +1,32 @@
-import java.util.HashMap
+import java.util.*;
 
 public class Photographer{
-  public static void main(String[] args) {
-    Photographer<String>
-  }
+
+ private String name;
+ private ArrayList<Camera>catalogue; 
+
+ public Photographer(String name){
+  this.name = name;
+  this.catalogue = new ArrayList<Camera>();
+ }
+
+ public String getName(){
+  return this.name;
+ }
+
+ public void addCamera(Camera model){
+  catalogue.add(model);
+ }
+
+ public int cameraCount(){
+  return catalogue.size();
+ }
+
+ public void minusCamera(Camera model){
+   catalogue.remove(model);
+ }
+
+
+
 }
+
