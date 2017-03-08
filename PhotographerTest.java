@@ -38,5 +38,13 @@ public class PhotographerTest{
     assertEquals("Nikon f90",analoguecamera.printDetails());
   }
 
-}
 
+
+ @Test 
+ public void canPrintCatalogue(){
+  photographer.addCamera(digitalcamera);
+  photographer.addCamera(analoguecamera);
+  assertEquals("Nikon 300, Nikon f90", photographer.printCatalogue());
+ }
+
+}

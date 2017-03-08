@@ -26,15 +26,14 @@ public class Photographer{
    catalogue.remove(model);
  }
 
- // public String printDetails
+ 
 
- // public String printDetails(){
+ public String printCatalogue(){
   
- // for(String key : catalogue()){
- //  system.out.println(catalogue);
- // }
+ }
 
- // }
+
+
 
 
 }
