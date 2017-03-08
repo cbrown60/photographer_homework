@@ -33,5 +33,10 @@ public class PhotographerTest{
     assertEquals(0, photographer.cameraCount());
   }
 
+  @Test
+  public void canPrintCamera(){
+    assertEquals("Nikon f90",analoguecamera.printDetails());
+  }
+
 }
 
